@@ -1,0 +1,245 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0f172a;
+
+    font-family:'Poppins', sans-serif;
+
+    padding:20px;
+
+    overflow:hidden;
+}
+
+/* Card Container */
+
+.card-container{
+    perspective:1200px;
+}
+
+/* Business Card */
+
+.business-card{
+    width:420px;
+
+    min-height:250px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:30px;
+
+    color:white;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.45);
+
+    transition:0.5s;
+}
+
+/* Hover Effect */
+
+.business-card:hover{
+    transform:
+        rotateY(10deg)
+        rotateX(5deg)
+        scale(1.03);
+}
+
+/* Glow */
+
+.glow{
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    top:-100px;
+    right:-80px;
+
+    filter:blur(40px);
+}
+
+/* Top */
+
+.top{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    z-index:10;
+}
+
+/* Logo */
+
+.logo{
+    width:65px;
+    height:65px;
+
+    border-radius:20px;
+
+    background:white;
+
+    color:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    font-weight:700;
+}
+
+/* Brand */
+
+.brand{
+    font-size:20px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+}
+
+/* Content */
+
+.content{
+    position:relative;
+
+    z-index:10;
+
+    margin-bottom:35px;
+}
+
+/* Name */
+
+.content h1{
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+/* Role */
+
+.content h3{
+    font-size:22px;
+
+    font-weight:500;
+
+    color:#e2e8f0;
+
+    margin-bottom:18px;
+}
+
+/* Description */
+
+.content p{
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#f8fafc;
+
+    max-width:320px;
+}
+
+/* Contact */
+
+.contact{
+    position:relative;
+
+    z-index:10;
+}
+
+/* Info */
+
+.info{
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:14px;
+
+    font-size:15px;
+}
+
+/* Icon */
+
+.info i{
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .business-card{
+        width:100%;
+
+        padding:25px;
+    }
+
+    .content h1{
+        font-size:34px;
+    }
+
+    .content h3{
+        font-size:18px;
+    }
+
+    .brand{
+        font-size:16px;
+    }
+}
